@@ -54,7 +54,7 @@ The first four accesses ${onboardee} needs to get are [here](https://cicswiki.hu
     - Select the dropdown next to Launch and pick "watsonx"
     - When the page loads, go to the new sidebar and select Projects > View all projects 
     - Verify if you are a member of the CICS-AI-Project.
-    - If you are not a member, please reach out to @WilliamYates or @James-Davies to request access.
+    - If you are not a member, please reach out to @khushboo-sharma-110597 to request access.
 
 - [ ] **Join the IBM Cloud account for ETSI DevOps**
     - Please go and login to [AccessHub](https://ibm-support.saviyntcloud.com/ECMv6/request/requestHome) 
@@ -128,8 +128,8 @@ _________________________
 
 ### Mural Workspace to join:
 
-- [ ] CICS (@ben-cox can add you)
-- [ ] CICS-AI (@williamYates / @James-Davies can add you)
+- [ ] CICS (@khushboo-sharma-110597 can add you)
+- [ ] CICS-AI (@khushboo-sharma-110597 can add you)
   
 ### Team specific learning
 
@@ -166,8 +166,8 @@ _________________________
 
 ### Mural Workspace to join:
 
-- [ ] CICS (@ben-cox can add you)
-- [ ] CICS-AI (@williamYates / @James-Davies can add you)
+- [ ] CICS (@khushboo-sharma-110597 can add you)
+- [ ] CICS-AI (@khushboo-sharma-110597 can add you)
   
 ### Team specific learning
 

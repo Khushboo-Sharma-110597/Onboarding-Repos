@@ -5,8 +5,8 @@ Required CICS Explorer reading, learning, and accesses for ${onboardee}
 The first accesses ${onboardee} needs to get are [here]([link](https://cicswiki.hursley.ibm.com:9443/wiki/Main_Page)). ${buddy} please send them the URL.
 
 - [ ] Get a GitHub external account, link it with GitHub Enterprise - you'll need to complete the [open source training](https://w3.ibm.com/developer/open-source/) and use the account mapper.
-- [ ] Request access to `afaas-ce-read` bluegroup (@dave-nice / @khushboo-sharma-110597 can action)
-- [ ] Request access to `CICS Explorer Dev` in [ISIM](https://hurisim.hursley.ibm.com/itim/ui/Login.jsp) - @Chinmay-Das1 can help you.
+- [ ] Request access to `afaas-ce-read` bluegroup (@khushboo-sharma-110597 can action)
+- [ ] Request access to `CICS Explorer Dev` in [ISIM](https://hurisim.hursley.ibm.com/itim/ui/Login.jsp) - @khushboo-sharma-110597 can help you.
 - [ ] Request access to SPS access group `modernization-user` <details>
   <summary>    Here's how:</summary>
     Use AccessHub for request for access to our SPS Cloud account. Users should follow below steps to request for access.<br>
