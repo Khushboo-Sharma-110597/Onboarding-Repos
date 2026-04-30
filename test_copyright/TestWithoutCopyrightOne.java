@@ -1,3 +1,7 @@
+/*
+ * Copyright IBM Corp. 2026
+ */
+
 package test_copyright;
 
 public class TestWithoutCopyrightOne {
