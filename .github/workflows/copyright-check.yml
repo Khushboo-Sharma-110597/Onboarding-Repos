@@ -22,17 +22,33 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Add copyright headers to Java files
-        run: python scripts/add_copyright_headers.py .
+      - name: Detect changed Java files
+        id: changed-java
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            files=$(git diff --name-only origin/${{ github.base_ref }}...HEAD -- '*.java')
+          elif [ "${{ github.event.before }}" = "0000000000000000000000000000000000000000" ]; then
+            files=$(git diff-tree --no-commit-id --name-only -r HEAD -- '*.java')
+          else
+            files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} -- '*.java')
+          fi
+
+          files=$(echo "$files" | sed '/^$/d' | tr '\n' ' ')
+          echo "files=$files" >> "$GITHUB_OUTPUT"
+
+      - name: Add copyright headers to changed Java files
+        if: steps.changed-java.outputs.files != ''
+        run: python scripts/add_copyright_headers.py ${{ steps.changed-java.outputs.files }}
 
       - name: Commit changes if needed
+        if: steps.changed-java.outputs.files != ''
         run: |
           if git diff --quiet; then
             echo "No changes needed"
           else
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add .
+            git add ${{ steps.changed-java.outputs.files }}
             git commit -m "Add missing copyright headers"
             git push
           fi
